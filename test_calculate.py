@@ -18,3 +18,9 @@ def test_subtract():
     from calculate import subtract
     result = subtract(6, 3)
     assert result == 3
+
+
+def test_multiply():
+    from calculate import multiply
+    result = multiply(2, 3)
+    assert result == 6
