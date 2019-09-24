@@ -14,7 +14,7 @@ def test_add(a, b, expected):
     assert result == pytest.approx(expected)
     
 
-deg test_subtract():
+def test_subtract():
     from calculate import subtract
     result = subtract(6, 3)
     assert result == 3
