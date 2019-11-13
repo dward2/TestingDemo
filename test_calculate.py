@@ -10,6 +10,7 @@ import pytest
                           ])
 def test_add(a, b, expected):
     from calculate import add
+    print("a={},b={}".format(a, b))
     result = add(a, b)
     assert result == pytest.approx(expected)
 
