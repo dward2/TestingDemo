@@ -1,6 +1,7 @@
 import pytest
 from datetime import datetime
 
+
 @pytest.mark.parametrize("a, b, expected", [
                           (2, 3, 5),
                           (3, 7, 10),
