@@ -1,5 +1,5 @@
 import pytest
-
+from datetime import datetime
 
 @pytest.mark.parametrize("a, b, expected", [
                           (2, 3, 5),
@@ -17,6 +17,12 @@ def test_add(a, b, expected):
 
 def test_subtract():
     from calculate import subtract
+    # timestamp = datetime.now()
+    timestamp = datetime(1, 1, 1, 1, 1, 1, 1)
+    timestampstr = timestamp.strftime("%Y-%m-%d %H:%M:%S.%f")
+    # timestampstr1 = timestamp.strftime("%y-%m-%d %H:%M:%S.%f")
+    print(timestampstr)
+    # print(timestampstr1)
     result = subtract(6, 3)
     assert result == 3
 
