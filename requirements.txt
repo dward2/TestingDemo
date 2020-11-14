@@ -1,2 +1,2 @@
 pytest
-pytest-pep8
+pytest-pycodestyle
